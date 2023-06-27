@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="col" placeholder="Enter the col "><br><br>
+    <input type="text" name="" id="row" placeholder="Enter the row"><br><br>
+    <input type="button" name="" id="btn1" value="Generate table"><br><br>
+    <script>
+        var col=document.getElementById("col");
+        var row=document.getElementById("row");
+        var btn1=document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            document.write("<table border=1 width=80% height=300px>");
+                for(let i=0; i<row.value; i++)
+                {
+                    document.write("<tr>");
+                        for(let j=0; j<col.value; j++)
+                        {
+                            document.write("<td align='center'>" +"["+ i +"]" + "["+ j +"]" + "</td>");
+                        }
+                        document.write("<tr>");
+                }
+                document.write("</table>");
+        });
+    </script>
+</body>
+
+</html>
