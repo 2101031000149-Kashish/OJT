@@ -1,0 +1,18 @@
+h2{
+    text-align: center;
+    background: rgb(166, 209, 24);
+  }
+  h3 {
+    text-align: center;
+    background: lightgreen;
+  }
+  h1 {
+    text-align: center;
+    background-color: blanchedalmond;
+  }
+  /* *{
+    background-color: blue;
+  } */
+  .menu{
+    background-color: pink;
+  }
